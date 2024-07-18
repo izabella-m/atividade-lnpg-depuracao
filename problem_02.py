@@ -28,6 +28,8 @@ def read_input():
 
 def main():
     arr, k = read_input()
+    if len(arr) == 0 or k == 0: # Verifica o valor da entrada da função ,impossibilitando de chegar na função max_subarray_sum 0 ou uma lista vazia
+        return
     result = max_subarray_sum(arr, k)
     if result != -1:
         print("Maximum sum of a subarray of size {} is {}".format(k, result))
