@@ -47,9 +47,11 @@ class Bank:
         return None
 
     def transfer(self, from_account, to_account, amount):
-        from_account.withdraw(amount)  
-        to_account.deposit(amount)
-
+        if from_account.get_balance() >= amount:  #verifica se a conta tem saldo suficiente para fazer a transação
+            from_account.withdraw(amount)  
+            to_account.deposit(amount)
+        else:
+            print("A tranferencia falhou, saldo insuficiente")  # Retorno para transferência inválida
 
 def main():
     # Create a bank
