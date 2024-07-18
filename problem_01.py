@@ -11,14 +11,22 @@ def find_max(numbers):
 
 def get_numbers():
     numbers_str = input("Enter numbers separated by spaces: ")
-    numbers = numbers_str.split()
-    numbers = [int(num) for num in numbers]
-    return numbers
+    try:
+        numbers = numbers_str.split()
+        numbers = [int(num) for num in numbers]
+        return numbers
+    except ValueError:  # verifica input 
+        print("Invalid value")
+        return []
 
 def main():
     numbers = get_numbers()
-    print("Average:", calculate_average(numbers))
-    print("Maximum:", find_max(numbers))
+    if numbers:  #verifica valor de numbers para fazer o cálculo
+        print("Average:", calculate_average(numbers))
+        print("Maximum:", find_max(numbers))
+    else:
+        print("Invalid values")
+        
 
 if __name__ == "__main__":
     main()
