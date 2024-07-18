@@ -1,0 +1,10 @@
+ATIVIDADE:
+Dado os 4 programas deste Gist.
+Crie um repositório público no Github chamado atividade-lnpg-depuracao
+Adicione os 4 códigos em Python no repositório. Utilize os mesmos nomes dos arquivos em Python (ex. problem_01.py, etc.).
+Depure o código usando as técnicas aprendidas
+Corrija o código, e deixe um comentário na linha onde estava o bug.
+Mande um e-mail para leonardo.fernandes@ifal.edu.br com as seguintes informações:
+Título: Atividade Depuração - LNPG - <SEU NOME COMPLETO>
+No corpo do e-mail coloque o link para o repositório.
+IMPORTANTE: A linha onde está a correção deve conter um comentário informando qual foi a correção feita.

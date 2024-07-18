@@ -10,7 +10,8 @@ def find_max(numbers):
     return max_number
 
 def get_numbers():
-    numbers = input("Enter numbers separated by spaces: ").split()
+    numbers_str = input("Enter numbers separated by spaces: ")
+    numbers = numbers_str.split()
     numbers = [int(num) for num in numbers]
     return numbers
 
