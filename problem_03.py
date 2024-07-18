@@ -11,12 +11,12 @@ def matrix_multiply(A, B):
         return None
 
     # Initialize the result matrix with zeros
-    result = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
+    result = [[0 for _ in range(rows_B)] for _ in range(rows_A)] #substituindo nomes
 
     # Perform matrix multiplication
     for i in range(rows_A):
         for j in range(cols_B):
-            for k in range(cols_B): 
+            for k in range(cols_A): #Deveria se chamar clos_A, não cols_B
                 result[i][j] += A[i][k] * B[k][j]
 
     return result
